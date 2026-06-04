@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "compilerPath": "C:/mingw64/bin/g++.exe",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/Azure Kinect Body Tracking SDK/sdk/include",
+                "C:/Program Files/Azure Kinect SDK v1.4.2/sdk/include",
+                "B:/opencv/build/install/include",
+                "C:/mingw64/include",
+                "C:/mingw64/x86_64-w64-mingw32/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

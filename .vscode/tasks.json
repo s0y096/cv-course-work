@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "main.cpp",
+                "-o",
+                "main",
+                "-I", "C:/Program Files/Azure Kinect Body Tracking SDK/sdk/include",
+                "-I", "C:/Program Files/Azure Kinect SDK v1.4.2/sdk/include",
+                "-I", "B:/opencv/build/install/include",
+                "-L", "C:/Program Files/Azure Kinect Body Tracking SDK/sdk/windows-desktop/amd64/release/lib",
+                "-L", "C:/Program Files/Azure Kinect SDK v1.4.2/sdk/windows-desktop/amd64/release/lib",
+                "-L", "B:/opencv/build/install/x64/mingw/lib",
+                "-lopencv_world4130",
+                "-lk4abt",
+                "-lk4a",
+            ],
+            "group":{
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
